@@ -1,14 +1,5 @@
 We'd like you to build a simple REST API for us - a basic car makes and models database interacting with an external API. Here's a full specification of endpoints that we'd like it to have:
 
-
-cars/ POST GET
-cars/{id} DELETE
-rate/ POST
-popular/ GET
-
-car: make, model, avg_rating, rates_number
-rate: id, rating
-
 POST /cars
 
     Request body should contain car make and model name
@@ -138,6 +129,3 @@ Rules & hints
 6. The application's code should be kept in a public repository so that we can read it, pull it and build it ourselves. Remember to include README file or at least basic notes on application requirements and setup - we should be able to easily and quickly get it running.
 7. Please dockerize your application and use docker-compose or a similar solution.
 8. Written application must be hosted and publicly available for us online - we recommend Heroku.
-
-
-
