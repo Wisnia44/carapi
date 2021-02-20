@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['0.0.0.0',]
 # Application definition
 
 INSTALLED_APPS = [
+    'cars',
 
     'rest_framework',
     'rest_framework.authtoken',
@@ -126,3 +127,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
 STATICFILES_DIRS = (path.join(BASE_DIR, "static"),)
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [],
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
+}
